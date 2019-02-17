@@ -75,7 +75,7 @@ test.addEventListener('click', () => {
 
 const testSwarm = () => {
 
-  let swarmContent = 'Hello, Electron as a GUI for NuCypher Apps!'
+  let swarmContent = 'Hello, EFT Discretion!'
   
   swarmClient.bzz
       .upload(swarmContent, { contentType: 'text/plain' })

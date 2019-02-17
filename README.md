@@ -1,8 +1,8 @@
-# Electron as a GUI for NuCypher Apps
+# "EFT Discretion" - Organizational File Sharing using NuCypher and Swarm
 
 ## Summary
 
-This OS X desktop application facilitates the secure sharing of files in an organization. It accomplishes this within an [Electron UI](https://electronjs.org/) with [NuCypher](https://www.nucypher.com/) and [Ethereum Swarm](https://swarm-gateways.net/bzz:/theswarm.eth/).
+This OS X desktop application facilitates the secure sharing of files within an organization. It accomplishes this within an [Electron UI](https://electronjs.org/) using [NuCypher](https://www.nucypher.com/) and [Ethereum Swarm](https://swarm-gateways.net/bzz:/theswarm.eth/).
 
 ## Installation
 
