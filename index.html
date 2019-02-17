@@ -2,18 +2,41 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello Calculator!</title>
+    <title>NuCypher Electron Test</title>
   </head>
   <body>
-    <h1>Hello Calculator!</h1>
-    <p> We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.</p>
-    <p>Input something like <code>1 + 1</code>.</p>
-    <p>This calculator supports <code>+-*/^()</code>, 
-    whitespaces, and integers and floating numbers.</p>
-    <input id="formula" value="1 + 2.0 * 3.1 / (4 ^ 5.6)"></input>
-    <div id="result"></div>
+    <h2>NuCypher Electron Test</h2>
+
+    <hr/>
+
+    <h3>Start here:</h3>
+
+    <div>
+      <textarea id="formula" cols="35" rows="7"></textarea>
+    </div>
+
+    <div style="text-align:right;">
+      <input type="button" value="Test" id="run-test" />
+    </div>
+
+    <hr/>
+
+    <h3>Result:</h3>
+
+    <p>
+      Success: <span id="status"></span>
+    </p>
+
+    <p>
+      Alice's text:<br/>
+      <div id="alice-result"></div>
+    </p>
+
+    <p>
+      Bob's text:<br/>
+      <div id="bob-result"></div>
+    </p>
+
   </body>
 
   <script>

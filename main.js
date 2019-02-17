@@ -8,8 +8,9 @@ const path = require('path')
  * py process
  *************************************************************/
 
+const PY_BINARY = 'python3.6'
 const PY_DIST_FOLDER = 'pycalcdist'
-const PY_FOLDER = 'pycalc'
+const PY_FOLDER = 'nucypher'
 const PY_MODULE = 'api' // without .py suffix
 
 let pyProc = null
@@ -42,12 +43,21 @@ const createPyProc = () => {
   if (guessPackaged()) {
     pyProc = require('child_process').execFile(script, [port])
   } else {
-    pyProc = require('child_process').spawn('python', [script, port])
+    pyProc = require('child_process').spawn(PY_BINARY, [script, port])
   }
  
   if (pyProc != null) {
     //console.log(pyProc)
-    console.log('child process success on port ' + port)
+    console.log('nucypher child process success on port ' + port)
+
+    pyProc.stderr.on('data', (data) => {
+      console.log(`nucypher api stderr: ${data}`);
+    });
+
+    pyProc.on('close', (code) => {
+      console.log(`nucypher child process exited with code ${code}`);
+    });
+
   }
 }
 
