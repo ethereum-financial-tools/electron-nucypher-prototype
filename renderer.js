@@ -37,6 +37,7 @@ let test = document.querySelector('#run-test')
 let status = document.querySelector('#status')
 let aliceResult = document.querySelector('#alice-result')
 let bobResult = document.querySelector('#bob-result')
+let swarmHash = document.querySelector('#swarm-hash')
 let swarmResult = document.querySelector('#swarm-result')
 
 
@@ -73,9 +74,15 @@ test.addEventListener('click', () => {
 */
 
 const testSwarm = () => {
-  let swarmHash = '64542a1fe7fda1d246a559e56ac93d8d1607bbd4e0b7c7252805ae4027c5f16c'
+
+  let swarmContent = 'Hello, Electron as a GUI for NuCypher Apps!'
   
-  swarmClient.bzz.download(swarmHash)
+  swarmClient.bzz
+      .upload(swarmContent, { contentType: 'text/plain' })
+      .then(hash => {
+        swarmHash.textContent = hash.substring(0, 6) + '...' + hash.substring(hash.length - 6);
+        return swarmClient.bzz.download(hash)
+      })
       .then(res => res.text())
       .then(swarmContent => {
         //console.log(swarmContent)
