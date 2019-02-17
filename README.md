@@ -4,7 +4,12 @@
 
 This is an Electron application which facilitates the secure sharing of files in an organization.
 
-This prototype is based on work and forked from [/fyears/electron-python-example](https://github.com/fyears/electron-python-example).
+
+## Origin
+
+This prototype is based on work by ["Fleeting Years"](https://www.fyears.org/about.html) and forked from [https://github.com/fyears/electron-python-example](https://github.com/fyears/electron-python-example). 
+
+The README from this original project has been copied to [docs/electron-python-example.md](https://github.com/ethereum-financial-tools/electron-nucypher-prototype/blob/master/docs/electron-python-example.md).
 
 
 ## NuCypher pyUmbral and Python3
