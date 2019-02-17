@@ -17,6 +17,7 @@
   "author": "jpitts",
   "license": "MIT",
   "dependencies": {
+    "@erebos/swarm-browser": "^0.6.3",
     "zerorpc": "git+https://github.com/fyears/zerorpc-node.git"
   },
   "devDependencies": {

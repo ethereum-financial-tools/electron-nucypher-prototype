@@ -4,3 +4,5 @@ node_modules/
 build/
 dist/
 pycalcdist/
+swarm
+geth

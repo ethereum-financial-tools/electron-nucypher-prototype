@@ -1,3 +1,8 @@
+
+/*
+  zerorpc client to access the pyUmbral functionality through
+*/
+
 const zerorpc = require("zerorpc")
 let client = new zerorpc.Client()
 
@@ -10,6 +15,23 @@ client.invoke("echo", "zerorpc server ready", (error, res) => {
     console.log("zerorpc server is ready")
   }
 })
+
+/*
+  Swarm client
+  TODO: enable once dependencies are figured out
+  NOTE: requires the Swarm service to be running
+
+const SwarmClient = require("@erebos/swarm-browser")
+const swarmClient = new SwarmClient({
+  bzz: { url: 'http://127.0.0.1:8500' },
+})
+
+*/
+
+
+/*
+  DOM things for convenience
+*/
 
 let formula = document.querySelector('#formula')
 let test = document.querySelector('#run-test')
