@@ -14,3 +14,7 @@ This prototype currently depends on python3.6.
 
 Installation of python3.6 and pyUmbral dependencies will be added here soon.
 
+## Warning
+
+Do not use this software for anything of value. It is a prototype.
+

@@ -1,25 +1,27 @@
 {
-  "name": "pretty-calculator",
-  "version": "1.0.0",
-  "description": "A minimal Electron and Python - based calculator ",
+  "name": "electron-nucypher-prototype",
+  "version": "0.0.1",
+  "description": "Electron as a GUI for NuCypher Applications",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/fyears/electron-python-example",
+  "repository": "https://github.com/ethereum-financial-tools/electron-nucypher-prototype",
   "keywords": [
     "Electron",
     "Python",
+    "NyCypher",
     "zerorpc",
-    "demo"
+    "prototype"
   ],
-  "author": "fyears",
+  "author": "jpitts",
   "license": "MIT",
   "dependencies": {
     "zerorpc": "git+https://github.com/fyears/zerorpc-node.git"
   },
   "devDependencies": {
     "electron": "^1.7.6",
-    "electron-packager": "^9.0.1"
+    "electron-packager": "^9.0.1",
+    "electron-rebuild": "^1.8.4"
   }
 }
